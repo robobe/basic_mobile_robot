@@ -1,10 +1,12 @@
 import os
 
 from ament_index_python import get_package_share_directory
+from launch.substitutions import LaunchConfiguration
 from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription, AppendEnvironmentVariable
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.actions import Node
+from launch.actions import DeclareLaunchArgument
 import xacro
 
 PACKAGE = "basic_mobile_robot"
@@ -14,6 +16,8 @@ SDF = "model.sdf.xacro"
 
 
 def generate_launch_description():
+    use_sim_time = LaunchConfiguration('use_sim_time', default='true')
+
     pkg_gazebo_ros = get_package_share_directory("gazebo_ros")
     pkg = get_package_share_directory(PACKAGE)
     rviz_config = os.path.join(pkg, "config", "rviz.rviz")
@@ -42,12 +46,18 @@ def generate_launch_description():
     doc = xacro.parse(open(robot_description_path))
     xacro.process_doc(doc)
 
+    use_sim_time_arg = DeclareLaunchArgument(
+        "use_sim_time",
+        default_value="true",
+        description="use sim time"
+    )
+
     robot_state_publisher = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
         parameters=[
             {
-                'use_sim_time': True, 
+                'use_sim_time': use_sim_time, 
                 'robot_description': doc.toxml()
             }
         ]
@@ -59,7 +69,7 @@ def generate_launch_description():
         name='ekf_filter_node',
         output='screen',
         parameters=[ekf_file_path, 
-            {'use_sim_time': True}
+            {'use_sim_time': use_sim_time}
         ])
 
     spawn_entity = Node(
