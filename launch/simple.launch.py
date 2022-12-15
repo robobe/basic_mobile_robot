@@ -5,7 +5,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 import os
 
 PACKAGE = "basic_mobile_robot"
-WORLD = "empty.world"
+WORLD = "bug0.world"
 
 
 def generate_launch_description():

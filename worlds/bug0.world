@@ -1,0 +1,161 @@
+<sdf version='1.6'>
+  <world name='bug0'>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+
+
+    <!-- wall 1-->
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>wall1-2</name>
+      <pose>-2 -5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>wall1-3</name>
+      <pose>2 -5 0 0 -0 0</pose>
+    </include>
+    <!-- left wall-->
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j1</name>
+      <pose>-7.0 9.5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j2</name>
+      <pose>-3.0 9.5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j3</name>
+      <pose>1 9.5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j4</name>
+      <pose>5 9.5 0 0 -0 0</pose>
+    </include>
+    <!-- wall-->
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j6_1</name>
+      <pose>9.5 6.0 0 0 0 -1.56865</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j6</name>
+      <pose>9.5 2.0 0 0 0 -1.56865</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j7</name>
+      <pose>9.5 -2.0 0 0 0 -1.56865</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j8</name>
+      <pose>9.5 -6.0 0 0 0 -1.56865</pose>
+    </include>
+    <!--wall -->
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j9</name>
+      <pose>5 -9.5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j10</name>
+      <pose>1 -9.5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j11</name>
+      <pose>-3 -9.5 0 0 -0 0</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j12</name>
+      <pose>-7 -9.5 0 0 -0 0</pose>
+    </include>
+    <!-- wall -->
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j13_1</name>
+      <pose>-9.5 -6.0 0 0 0 -1.56865</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j13</name>
+      <pose>-9.5 -2.0 0 0 0 -1.56865</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j14</name>
+      <pose>-9.5 2.0 0 0 0 -1.56865</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j15</name>
+      <pose>-9.5 6 0 0 0 -1.56865</pose>
+    </include>
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>c2</name>
+      <pose>7.5 9.5 -0 -0 0 -0</pose>
+    </include>
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>c3</name>
+      <pose>8.5 8.5 -0 -0 0 -0</pose>
+    </include>
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>c4</name>
+      <pose>-9.5 8.5 -0 -0 0 -0</pose>
+    </include>
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>c5</name>
+      <pose>-9.5 9.5 -0 -0 0 -1.2e-05</pose>
+    </include>
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>c6</name>
+      <pose>7.5 -9.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>c6-1</name>
+      <pose>8.5 -8.5 0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>c7</name>
+      <pose>-9.5 -8.5 -0 -0 -0 -0</pose>
+    </include>
+    <include>
+      <uri>model://construction_cone</uri>
+      <name>c8</name>
+      <pose>-9.5 -9.5 -0 0 0 0</pose>
+    </include>
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>wall1-1_1</name>
+      <pose>-1.4404 3.63217 0 0 -0 0</pose>
+    </include>
+    
+    
+    <include>
+      <uri>model://jersey_barrier</uri>
+      <name>j6_2</name>
+      <pose>1.6776 1.87585 0 0 0 -1.56865</pose>
+    </include>
+
+  </world>
+</sdf>
