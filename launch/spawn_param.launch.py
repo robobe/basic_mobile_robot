@@ -10,6 +10,7 @@ import xacro
 PACKAGE = "basic_mobile_robot"
 WORLD = "empty.world"
 MODEL = "basic_mobile_robot"
+SDF = "model.sdf.xacro"
 
 
 def generate_launch_description():
@@ -36,7 +37,7 @@ def generate_launch_description():
         launch_arguments={"verbose": "true", "world": WORLD}.items(),
     )
 
-    robot_description_path = os.path.join(pkg, "models", MODEL, "model.sdf.xacro")
+    robot_description_path = os.path.join(pkg, "models", MODEL, SDF)
     doc = xacro.parse(open(robot_description_path))
     xacro.process_doc(doc)
 

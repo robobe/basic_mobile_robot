@@ -36,6 +36,7 @@
     </visual>
   </link>
 
+
   <!-- *********************** IMU SENSOR SETUP **************************  -->
   <link name="imu_link">
     <gravity>true</gravity>
