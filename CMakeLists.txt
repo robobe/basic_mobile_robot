@@ -8,7 +8,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 install(
-  DIRECTORY config launch  models rviz src worlds
+  DIRECTORY config launch  models src worlds maps demos description
   DESTINATION share/${PROJECT_NAME}
 )
 

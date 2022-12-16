@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot name="" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:arg name="with_gripper" default="true" />
+    <xacro:if value="$(arg with_gripper)">
+        <!--with gripper-->
+    </xacro:if>
+</robot>
