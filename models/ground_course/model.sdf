@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <model name="ground_course">
+        <pose>1 2.3 -.1 0 0 0</pose>
+        <static>1</static>
+        <link name="ground">
+          <collision name="ground_coll">
+            <geometry>
+              <box>
+                <size>10 10 .1</size>
+              </box>
+            </geometry>
+            <surface>
+              <contact>
+                <ode/>
+              </contact>
+            </surface>
+          </collision>
+          <visual name="ground_vis">
+            <geometry>
+              <box>
+                <size>10 10 .1</size>
+              </box>
+            </geometry>
+            <material>
+              <script>
+                <uri>model://ground_course/materials/scripts</uri>
+                <uri>model://ground_course/materials/textures</uri>
+                <name>course</name>
+              </script>
+            </material>
+          </visual>
+        </link>
+      </model>
+</sdf>
